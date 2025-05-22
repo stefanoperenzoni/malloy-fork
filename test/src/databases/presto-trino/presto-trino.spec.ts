@@ -55,7 +55,7 @@ describe.each(runtimes.runtimeList)(
       }`).malloyResultMatches(runtime, {m1: 1, m2: 1});
     });
 
-    it(`runs the max_by function groups - ${databaseName}`, async () => {
+    it(`runs the max_by functions groups - ${databaseName}`, async () => {
       await expect(`run: ${databaseName}.sql("""
                 SELECT 1 as y, 55 as x, z as a
       UNION ALL SELECT 50 as y, 22 as x, z as a
